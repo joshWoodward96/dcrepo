@@ -48,7 +48,7 @@ class unitTesting(unittest.TestCase):
 
 class delete(unittest.TestCase):   
     # Delete employee
-    def test_employees_content(self):
+    def test_employees_delete(self):
         tester = app.test_client(self)
         response = tester.delete("/deleteEmployee/1")
         self.assertEqual(response.content_type, "application/json")

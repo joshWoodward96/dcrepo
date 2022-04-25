@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: app
-  name: app
+    app: appp
+  name: appp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app
+      app: appp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: app
+        app: appp
     spec:
       containers:
-      - image: 14066910/app:v1
-        name: app
+        - image: 14066910/appp:v1
+          name: appp
